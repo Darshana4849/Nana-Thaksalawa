@@ -36,7 +36,7 @@
 export const IMAGES_CONFIG = {
   // Home Page Hero Showcase Image (මුල් පිටුවේ ප්‍රධාන රූපය)
   homeHero: {
-    src: '/images/home/hero-banner.svg', // Change to your custom image, e.g. '/images/home/my-image.png' or '/images/hero.png'
+    src: '/images/home/banner.jpeg', // Change to your custom image, e.g. '/images/home/my-image.png' or '/images/hero.png'
     alt: 'Letter Helper — Sinhala Handwriting Learning System Showcase',
     title: 'Letter Helper · Interactive Learning Suite',
     subtitle: 'Sinhala Handwriting Recognition & Guided Tracing Platform',
@@ -44,26 +44,26 @@ export const IMAGES_CONFIG = {
 
   // Main Project Logo
   logo: {
-    src: '/images/logo/logo.svg', // or '/images/logo/logo.png'
+    src: '/images/logo/logo.png', // or '/images/logo/logo.png'
     alt: 'Letter Helper Logo',
   },
 
   // Team Member Photos (displayed on About Us page)
   team: {
     member1: {
-      src: '/images/team/member1.svg', // or member1.jpg / member1.png
+      src: '/images/team/samadhi.jpeg', // or member1.jpg / member1.png
       alt: 'Researcher 1 — Letter Recognition Lead',
     },
     member2: {
-      src: '/images/team/member2.svg', // or member2.jpg / member2.png
+      src: '/images/team/vinodya.jpeg', // or member2.jpg / member2.png
       alt: 'Researcher 2 — Tracing & Guidance Lead',
     },
     member3: {
-      src: '/images/team/member3.svg', // or member3.jpg / member3.png
+      src: '/images/team/darshana.jpeg', // or member3.jpg / member3.png
       alt: 'Researcher 3 — Gamified Learning Lead',
     },
     member4: {
-      src: '/images/team/member4.svg', // or member4.jpg / member4.png
+      src: '/images/team/dasun.jpeg', // or member4.jpg / member4.png
       alt: 'Researcher 4 — Sentences & Progress Lead',
     },
   },
@@ -71,11 +71,11 @@ export const IMAGES_CONFIG = {
   // Academic Supervisor Photos (displayed on About Us page)
   supervisors: {
     supervisor1: {
-      src: '/images/supervisors/supervisor1.svg', // or supervisor1.jpg
+      src: '/images/supervisors/suriya.jpeg', // or supervisor1.jpg
       alt: 'Academic Supervisor',
     },
     supervisor2: {
-      src: '/images/supervisors/supervisor2.svg', // or supervisor2.jpg
+      src: '/images/supervisors/dulani.jpg', // or supervisor2.jpg
       alt: 'Academic Co-Supervisor',
     },
   },

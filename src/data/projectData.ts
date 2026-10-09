@@ -20,7 +20,7 @@ export const PROJECT_METADATA = {
   department: 'Department of Software Engineering / Computer Science',
   academicYear: 'Final-Year Undergraduate Research Project (2025/2026)',
   researchArea: 'Educational Technology, Artificial Intelligence, Sinhala Handwriting Recognition, Interactive Learning, and Intelligent Writing Assistance',
-  officialEmail: 'letterhelper.research@sliit.lk',
+  officialEmail: 'info.nanathaksalawa@gmail.com',
   projectLeadContact: '[Project Coordinator Contact - To be updated]',
   location: 'SLIIT Malabe Campus, New Kandy Road, Malabe, Sri Lanka',
 };

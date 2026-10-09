@@ -100,7 +100,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
               isExplicitDark ? 'text-slate-400' : 'text-slate-500 dark:text-slate-400'
             }`}
           >
-            <span className="font-sinhala font-semibold">අකුරු සහයක</span>
+            <span className="font-sinhala font-semibold">නැණ තක්සලාව</span>
             <span className="text-slate-300 dark:text-slate-600">·</span>
             <span>SLIIT Research</span>
           </span>

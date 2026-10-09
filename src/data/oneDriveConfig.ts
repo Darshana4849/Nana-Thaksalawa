@@ -60,7 +60,7 @@ export const documents: DocumentRecord[] = [
     category: 'Topic Assessment Form',
     fileType: 'PDF',
     description: 'Official SLIIT Faculty of Computing Topic Assessment Form (TAF) defining the research domain, problem statement, core objectives, and supervisor allocations.',
-    oneDriveUrl: '', // <-- Paste OneDrive sharing link here
+    oneDriveUrl: 'https://mysliit-my.sharepoint.com/:f:/g/personal/it22151124_my_sliit_lk/IgBTXpXmM_2hRKMhy6SxVr7qAXAiJb5-RgfapKG3joGE7ic?e=d8Qauh', // <-- Paste OneDrive sharing link here
     status: 'completed',
     date: 'February 2026',
     deliverableCode: 'TAF',
@@ -71,7 +71,7 @@ export const documents: DocumentRecord[] = [
     category: 'Project Proposal Documents',
     fileType: 'PDF',
     description: 'Comprehensive research project proposal documentation encompassing the literature review, methodology, architectural design, and semester execution plan.',
-    oneDriveUrl: '', // <-- Paste OneDrive sharing link here
+    oneDriveUrl: 'https://mysliit-my.sharepoint.com/:f:/g/personal/it22151124_my_sliit_lk/IgBra5PdsadgRLziYZXnHTulAYDNMsXh-HYXM4UrTTHjCPo?e=pAMlFY', // <-- Paste OneDrive sharing link here
     status: 'completed',
     date: 'March 2026',
     deliverableCode: 'PROP',
