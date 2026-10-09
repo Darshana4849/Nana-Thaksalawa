@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="600" height="360">
+  <rect width="600" height="360" rx="16" fill="#0F172A"/>
+  <!-- Top bar -->
+  <rect x="0" y="0" width="600" height="42" fill="#1E293B"/>
+  <circle cx="24" cy="21" r="5" fill="#EF4444"/>
+  <circle cx="40" cy="21" r="5" fill="#F59E0B"/>
+  <circle cx="56" cy="21" r="5" fill="#10B981"/>
+  <text x="80" y="26" fill="#94A3B8" font-family="sans-serif" font-size="12" font-weight="600">Spring Boot REST Progress Dashboard &amp; Sentence Manager</text>
+
+  <!-- Left Sidebar representing sentence list -->
+  <g transform="translate(30, 60)">
+    <rect x="0" y="0" width="160" height="260" rx="10" fill="#1E293B" stroke="#334155"/>
+    <text x="14" y="24" fill="#E2E8F0" font-family="sans-serif" font-size="11" font-weight="bold">Curriculum Sentences</text>
+    
+    <rect x="10" y="38" width="140" height="32" rx="6" fill="#2563EB" opacity="0.9"/>
+    <text x="20" y="58" fill="#FFFFFF" font-family="sans-serif" font-size="10">අම්මා බත් උයයි</text>
+    
+    <rect x="10" y="78" width="140" height="32" rx="6" fill="#334155"/>
+    <text x="20" y="98" fill="#CBD5E1" font-family="sans-serif" font-size="10">මල පිපෙයි</text>
+
+    <rect x="10" y="118" width="140" height="32" rx="6" fill="#334155"/>
+    <text x="20" y="138" fill="#CBD5E1" font-family="sans-serif" font-size="10">ගස උසයි</text>
+  </g>
+
+  <!-- Right Chart Area -->
+  <g transform="translate(210, 60)">
+    <rect x="0" y="0" width="360" height="260" rx="10" fill="#1E293B" stroke="#334155"/>
+    <text x="16" y="24" fill="#E2E8F0" font-family="sans-serif" font-size="11" font-weight="bold">Longitudinal Student Accuracy Trend</text>
+    
+    <!-- Coordinate graph axes -->
+    <line x1="40" y1="210" x2="330" y2="210" stroke="#475569" stroke-width="1.5"/>
+    <line x1="40" y1="50" x2="40" y2="210" stroke="#475569" stroke-width="1.5"/>
+    
+    <!-- Accuracy curve -->
+    <polyline points="50,180 100,165 150,140 200,120 250,90 300,75" fill="none" stroke="#38BDF8" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="50" cy="180" r="4" fill="#38BDF8"/>
+    <circle cx="100" cy="165" r="4" fill="#38BDF8"/>
+    <circle cx="150" cy="140" r="4" fill="#38BDF8"/>
+    <circle cx="200" cy="120" r="4" fill="#38BDF8"/>
+    <circle cx="250" cy="90" r="4" fill="#38BDF8"/>
+    <circle cx="300" cy="75" r="5" fill="#34D399"/>
+
+    <text x="300" y="60" text-anchor="middle" fill="#34D399" font-family="monospace" font-size="10" font-weight="bold">94% Mastery</text>
+  </g>
+</svg>

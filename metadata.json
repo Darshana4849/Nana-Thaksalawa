@@ -1,0 +1,6 @@
+{
+  "name": "Letter Helper Research Project",
+  "description": "Academic research showcase for Letter Helper — an intelligent Sinhala handwriting learning support system developed at SLIIT.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Letter Helper | Sinhala Handwriting Learning Support System</title>
+    <meta
+      name="description"
+      content="Letter Helper is a Sinhala handwriting learning support research project developed at SLIIT integrating handwritten character recognition, guided writing practice, gamified learning, and sentence-level learning support."
+    />
+    <meta property="og:title" content="Letter Helper | Sinhala Handwriting Learning Support System" />
+    <meta
+      property="og:description"
+      content="Final-Year Undergraduate Research Project at Sri Lanka Institute of Information Technology (SLIIT) focusing on educational technology, deep learning character recognition, and adaptive handwriting scaffolding."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Letter Helper | Sinhala Handwriting Learning Support System" />
+    <meta name="twitter:description" content="Research project showcase for Letter Helper: Sinhala handwriting learning support system." />
+    
+    <!-- Google Fonts: Inter & Noto Sans Sinhala for authentic typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Sinhala:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Brand Favicon: Stylized Sinhala Glyph with pencil motif -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%2314213D'/><path d='M20 44 C 18 32, 28 22, 38 22 C 45 22, 48 26, 48 31 C 48 37, 43 41, 36 41 C 28 41, 26 34, 28 30' fill='none' stroke='%233563E9' stroke-width='4.5' stroke-linecap='round'/><circle cx='46' cy='18' r='4' fill='%23F4B942'/><path d='M38 48 L46 44 L44 36 Z' fill='%2316A6A0'/></svg>"
+    />
+
+    <!-- Theme initialization to prevent flash of light theme -->
+    <script>
+      (function() {
+        try {
+          const stored = localStorage.getItem('letter-helper-theme');
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (stored === 'dark' || (!stored && prefersDark)) {
+            document.documentElement.classList.add('dark');
+            document.documentElement.setAttribute('data-theme', 'dark');
+            document.documentElement.style.colorScheme = 'dark';
+          } else {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.setAttribute('data-theme', 'light');
+            document.documentElement.style.colorScheme = 'light';
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 antialiased selection:bg-blue-100 selection:text-blue-900 dark:selection:bg-blue-900/50 dark:selection:text-blue-200 min-h-screen flex flex-col font-sans transition-colors duration-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
