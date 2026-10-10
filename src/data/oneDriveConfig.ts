@@ -82,7 +82,7 @@ export const documents: DocumentRecord[] = [
     category: 'Draft Thesis Documents',
     fileType: 'PDF',
     description: 'Interim draft thesis reports covering machine learning models, character recognition pipelines, interactive stroke tracing algorithms, and preliminary evaluations.',
-    oneDriveUrl: '', // <-- Paste OneDrive sharing link here
+    oneDriveUrl: 'https://mysliit-my.sharepoint.com/:f:/g/personal/it22151124_my_sliit_lk/IgAPuG3HZWmaQaEsx2af056xAZOvWmqGZY_HC91MQNmG1QM?e=GAy8EB', // <-- Paste OneDrive sharing link here
     status: 'review',
     date: 'June 2026',
     deliverableCode: 'DRAFT',
@@ -93,7 +93,7 @@ export const documents: DocumentRecord[] = [
     category: 'Logbook Submissions',
     fileType: 'PDF',
     description: 'Verified weekly research activity logs, continuous supervisor meeting minutes, milestone progress sign-offs, and supervisory assessment records.',
-    oneDriveUrl: '', // <-- Paste OneDrive sharing link here
+    oneDriveUrl: 'https://mysliit-my.sharepoint.com/:f:/g/personal/it22151124_my_sliit_lk/IgBQn5haRCVbTbTaQ0PLF1wCATqG0AZlsngQ5-aIf__9b6I?e=Nm26fA', // <-- Paste OneDrive sharing link here
     status: 'pending',
     date: 'Monthly Submissions',
     deliverableCode: 'LOG',
@@ -104,7 +104,7 @@ export const documents: DocumentRecord[] = [
     category: 'Research Paper Submissions',
     fileType: 'PDF',
     description: 'Academic manuscript submissions and conference drafts detailing the novel 22-class Sinhala handwriting CNN recognition model, empirical results, and findings.',
-    oneDriveUrl: '', // <-- Paste OneDrive sharing link here
+    oneDriveUrl: 'https://mysliit-my.sharepoint.com/:f:/g/personal/it22151124_my_sliit_lk/IgAj1arcpwVbSJZuozyB8KaEAZgfCY3motO4VLIonEGU5fU?e=UJC8nP', // <-- Paste OneDrive sharing link here
     status: 'review',
     date: '31 August 2026',
     deliverableCode: 'PAPER',
@@ -143,7 +143,7 @@ export const presentations: PresentationRecord[] = [
       'Research objectives & preliminary architectural concepts',
       'Resource allocation & academic semester timeline',
     ],
-    oneDriveUrl: '', // <-- Paste OneDrive sharing link here
+    oneDriveUrl: 'https://mysliit-my.sharepoint.com/:f:/g/personal/it22151124_my_sliit_lk/IgDGU5ku2zL6RJQ6M1GHPu8MAbnZ5AZlH4MuguP7vso7QiE?e=3yLkzi', // <-- Paste OneDrive sharing link here
     status: 'pending',
     slideCountEstimate: '22 Slides',
     statusNote: 'Presentation delivered; official slide deck to be uploaded to OneDrive.',
@@ -163,7 +163,7 @@ export const presentations: PresentationRecord[] = [
       'Curriculum sentence structure and CRUD API models',
       'Supervisor feedback integration & subsequent milestones',
     ],
-    oneDriveUrl: '', // <-- Paste OneDrive sharing link here
+    oneDriveUrl: 'https://mysliit-my.sharepoint.com/:f:/g/personal/it22151124_my_sliit_lk/IgBqQRHcP0f9RK6wDDtQ2adTAYtbt9Wlpa1hrNuA_j3X6nM?e=MTD5CE', // <-- Paste OneDrive sharing link here
     status: 'pending',
     slideCountEstimate: '28 Slides',
     statusNote: 'Delivered before SLIIT review panel; slide deck archive pending OneDrive upload.',
@@ -183,7 +183,7 @@ export const presentations: PresentationRecord[] = [
       'Sentence management, multipart image uploads, and progress logging',
       'Research paper submission recap (Submitted: 31 August 2026)',
     ],
-    oneDriveUrl: '', // <-- Paste OneDrive sharing link here
+    oneDriveUrl: 'https://mysliit-my.sharepoint.com/:f:/g/personal/it22151124_my_sliit_lk/IgCifx3kpMKiTq4sdda6cMFJAQyDKTr1qeWUdQO5J-uQkSQ?e=yz6DXq', // <-- Paste OneDrive sharing link here
     status: 'pending',
     slideCountEstimate: '34 Slides',
     statusNote: 'Confirmed milestone date: 01 September 2026. Slide deck to be attached via OneDrive.',
