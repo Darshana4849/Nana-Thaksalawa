@@ -203,7 +203,7 @@ export const presentations: PresentationRecord[] = [
       'Primary school usability findings and pedagogical impact',
       'Publications, future roadmap, and live demonstration',
     ],
-    oneDriveUrl: '', // <-- Paste OneDrive sharing link here
+    oneDriveUrl: 'https://mysliit-my.sharepoint.com/:p:/g/personal/it22151124_my_sliit_lk/IQBmWrnJ5d-MRpDf13IiulFfAVGjZO1paNecL5pdekRQCew?e=PAYugX', // <-- Paste OneDrive sharing link here
     status: 'pending',
     slideCountEstimate: '40+ Slides',
     statusNote: 'Pending final viva schedule.',
