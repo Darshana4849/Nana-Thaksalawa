@@ -39,7 +39,7 @@ export const RESEARCH_TEAM: ResearcherProfile[] = [
     shortRole: 'Lead AI & Computer Vision Researcher',
     contributionSummary:
       'Engineered the compact residual convolutional neural network (stages [2, 2, 2]), curated the 80×80 grayscale dataset across 22 Sinhala character classes, and implemented the REST inference microservice.',
-    universityEmail: 'it22541734@my.sliit.lk',
+    universityEmail: 'samadhirp4@gmail.com',
     imageUrl: IMAGES_CONFIG.team.member1.src,
     githubUrl: undefined,
     linkedinUrl: undefined,
@@ -55,7 +55,7 @@ export const RESEARCH_TEAM: ResearcherProfile[] = [
     shortRole: 'Lead Canvas & Adaptive Scaffolding Researcher',
     contributionSummary:
       'Formulated ordered keypoint guidance, geometric boundary tolerance algorithms, stroke accuracy scoring, and the 3-attempt moving average adaptive scaffolding logic.',
-    universityEmail: 'it22123718@my.sliit.lk',
+    universityEmail: 'shvinodya@gmail.com',
     imageUrl: IMAGES_CONFIG.team.member2.src,
     githubUrl: undefined,
     linkedinUrl: undefined,
@@ -71,7 +71,7 @@ export const RESEARCH_TEAM: ResearcherProfile[] = [
     shortRole: 'Lead Educational UX & Gamification Researcher',
     contributionSummary:
       'Explored developmental motivation mechanics for primary school children, designing positive feedback micro-interactions and low-cognitive-load engagement frameworks for writing practice.',
-    universityEmail: 'it22151124@my.sliit.lk',
+    universityEmail: 'daramusicdk@gmail.com',
     imageUrl: IMAGES_CONFIG.team.member3.src,
     githubUrl: undefined,
     linkedinUrl: undefined,
@@ -87,7 +87,7 @@ export const RESEARCH_TEAM: ResearcherProfile[] = [
     shortRole: 'Lead Full-Stack & Progress Analytics Researcher',
     contributionSummary:
       'Architected the Spring Boot REST backend with Controller-Service-DTO structure, relational schema for curriculum sentences, multipart image upload, and longitudinal progress tracking analytics.',
-    universityEmail: 'it22181138@my.sliit.lk',
+    universityEmail: 'kmddkuruppu@gmail.com',
     imageUrl: IMAGES_CONFIG.team.member4.src,
     githubUrl: undefined,
     linkedinUrl: undefined,
