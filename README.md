@@ -65,7 +65,7 @@ All research documents and presentation slide decks are managed from a single ce
 The website is architected into the seven university-prescribed sections:
 1. **Home**: Hero section, statistics, overview of Letter Helper, four research component cards, learning workflow sequence, verified technical stack, research highlights, and exploration links.
 2. **Domain**: Literature survey (with academic placeholder citations), research gap, formal research problem statement, 7 specific research objectives, in-depth breakdowns of all 4 components, 8-phase research methodology, technology table, system architecture schematic, and interface evaluation gallery.
-3. **Milestones**: Interactive assessment timeline featuring the 5 formal assessment stages with dropdown selection, status indicators, and confirmed historical dates (Progress Presentation 2: 01 September 2026; research paper submission: 31 August 2026).
+3. **Milestones**: Interactive assessment timeline featuring the 5 formal assessment stages with dropdown selection, status indicators, and confirmed historical dates (Progress Presentation 2: 31 August 2026; research paper submission: 31 August 2026).
 4. **Documents**: Searchable academic archive categorized into Project Management, Research & Technical, Individual Theses, and Final Documents, with Microsoft OneDrive integration.
 5. **Presentations**: Slide deck archive with stage badges and Microsoft OneDrive PowerPoint/PDF access.
 6. **About Us**: Profiles for the 4 undergraduate researchers, academic supervisors, co-supervisors, institutional attribution, and acknowledgements.

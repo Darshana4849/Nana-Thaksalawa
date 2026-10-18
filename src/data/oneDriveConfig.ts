@@ -84,7 +84,7 @@ export const documents: DocumentRecord[] = [
     description: 'Interim draft thesis reports covering machine learning models, character recognition pipelines, interactive stroke tracing algorithms, and preliminary evaluations.',
     oneDriveUrl: 'https://mysliit-my.sharepoint.com/:f:/g/personal/it22151124_my_sliit_lk/IgAPuG3HZWmaQaEsx2af056xAZOvWmqGZY_HC91MQNmG1QM?e=GAy8EB', // <-- Paste OneDrive sharing link here
     status: 'review',
-    date: 'June 2026',
+    date: 'October 2026',
     deliverableCode: 'DRAFT',
   },
   {
@@ -173,7 +173,7 @@ export const presentations: PresentationRecord[] = [
     order: 3,
     title: 'Progress Presentation 2',
     academicStage: 'Advanced Implementation & Preliminary Results',
-    date: '01 September 2026',
+    date: '31 August 2026',
     fileType: 'PPTX',
     description:
       'Major milestone defense presenting empirical evaluation of the PyTorch residual CNN (96.75% test accuracy), 3-attempt adaptive scaffolding logic, and research paper draft submission.',
@@ -186,7 +186,7 @@ export const presentations: PresentationRecord[] = [
     oneDriveUrl: 'https://mysliit-my.sharepoint.com/:f:/g/personal/it22151124_my_sliit_lk/IgCifx3kpMKiTq4sdda6cMFJAQyDKTr1qeWUdQO5J-uQkSQ?e=yz6DXq', // <-- Paste OneDrive sharing link here
     status: 'pending',
     slideCountEstimate: '34 Slides',
-    statusNote: 'Confirmed milestone date: 01 September 2026. Slide deck to be attached via OneDrive.',
+    statusNote: 'Confirmed milestone date: 31 August 2026. Slide deck to be attached via OneDrive.',
   },
   {
     id: 'final-presentation',

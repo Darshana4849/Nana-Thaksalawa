@@ -66,7 +66,7 @@ export const MILESTONES_DATA: MilestoneItem[] = [
     title: 'Progress Presentation 2',
     shortTitle: 'Progress Presentation 2',
     academicStage: 'Advanced Implementation & Preliminary Results',
-    confirmedDate: '01 September 2026',
+    confirmedDate: '31 August 2026',
     marksAllocated: 'To be updated',
     status: 'Completed',
     description:
@@ -81,7 +81,7 @@ export const MILESTONES_DATA: MilestoneItem[] = [
       'Rigour of experimental results, test accuracy metrics, algorithmic coherence of the 3-attempt adaptive scaffolding, and paper draft readiness.',
     relatedDocumentIds: ['doc-progress-2', 'doc-paper-draft'],
     relatedPresentationIds: ['pres-pp2'],
-    historicalNotes: 'Confirmed milestone date: 01 September 2026. Research paper draft submitted 31 August 2026.',
+    historicalNotes: 'Confirmed milestone date: 31 August 2026. Research paper draft submitted 31 August 2026.',
   },
   {
     id: 'milestone-final-assessment',
