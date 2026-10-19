@@ -60,7 +60,7 @@ export const documents: DocumentRecord[] = [
     category: 'Checklist Document Submission',
     fileType: 'PDF',
     description: 'Submission checklist for verifying required research deliverables and accompanying academic documents.',
-    oneDriveUrl: '', // Add the official OneDrive sharing link when available.
+    oneDriveUrl: 'https://mysliit-my.sharepoint.com/:f:/g/personal/it22151124_my_sliit_lk/IgDB8AF36d40QI4aAFPoNMYXAb_rPzSEi8mE10maatXRkN0?e=TNl9rl', // Add the official OneDrive sharing link when available.
     status: 'pending',
     date: 'To be updated',
     deliverableCode: 'CHECKLIST',
