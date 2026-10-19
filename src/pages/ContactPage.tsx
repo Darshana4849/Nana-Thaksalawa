@@ -20,7 +20,6 @@ export const ContactPage: React.FC = () => {
 
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [copied, setCopied] = useState(false);
-  const [submittedViaMailto, setSubmittedViaMailto] = useState(false);
 
   const handleCopyEmail = () => {
     navigator.clipboard.writeText(PROJECT_METADATA.officialEmail);
@@ -58,8 +57,8 @@ export const ContactPage: React.FC = () => {
       `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
     );
 
-    window.open(gmailComposeUrl.toString(), '_blank', 'noopener,noreferrer');
-    setSubmittedViaMailto(true);
+    // Navigate in the current tab so browser pop-up blockers cannot prevent opening Gmail.
+    window.location.assign(gmailComposeUrl.toString());
   };
 
   return (
@@ -162,20 +161,6 @@ export const ContactPage: React.FC = () => {
                 opens a pre-filled Gmail draft addressed to the research coordinator. Review and click Send in Gmail.
               </p>
             </div>
-
-            {submittedViaMailto && (
-              <div className="p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-200 dark:border-emerald-800 text-xs text-emerald-900 dark:text-emerald-200 space-y-1">
-                <span className="font-bold flex items-center gap-1.5">
-                  <Check className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
-                  Gmail draft opened — click Send in Gmail to deliver your message!
-                </span>
-                <p className="text-emerald-800 dark:text-emerald-300">
-                  If Gmail did not open, please open Gmail and send your message
-                  directly to{' '}
-                  <span className="font-mono font-semibold">{PROJECT_METADATA.officialEmail}</span>.
-                </p>
-              </div>
-            )}
 
             <form onSubmit={handleSubmit} className="space-y-4 text-xs">
               {/* Full Name */}
