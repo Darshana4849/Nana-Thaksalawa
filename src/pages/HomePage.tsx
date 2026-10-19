@@ -52,7 +52,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onSelectTab }) => {
               </div>
 
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 dark:text-white tracking-tight leading-[1.12]">
-                 Sinhala Handwriting Learning support system for primary age kids{' '}
+                 Sinhala Handwriting Learning support system for {' '}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-indigo-600 to-teal-600 dark:from-blue-400 dark:via-indigo-300 dark:to-teal-300">
                   primary age kids
                 </span>
