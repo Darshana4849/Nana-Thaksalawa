@@ -47,14 +47,18 @@ export const ContactPage: React.FC = () => {
     e.preventDefault();
     if (!validate()) return;
 
-    // Build authentic mailto URI with sanitized params for static hosting compliance
-    const mailtoUri = `mailto:${PROJECT_METADATA.officialEmail}?subject=${encodeURIComponent(
-      `[Letter Helper Inquiry] ${formData.subject}`
-    )}&body=${encodeURIComponent(
+    // Open a pre-filled Gmail draft; the visitor reviews it and clicks Send in Gmail.
+    const gmailComposeUrl = new URL('https://mail.google.com/mail/');
+    gmailComposeUrl.searchParams.set('view', 'cm');
+    gmailComposeUrl.searchParams.set('fs', '1');
+    gmailComposeUrl.searchParams.set('to', PROJECT_METADATA.officialEmail);
+    gmailComposeUrl.searchParams.set('su', `[Letter Helper Inquiry] ${formData.subject}`);
+    gmailComposeUrl.searchParams.set(
+      'body',
       `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
-    )}`;
+    );
 
-    window.location.href = mailtoUri;
+    window.open(gmailComposeUrl.toString(), '_blank', 'noopener,noreferrer');
     setSubmittedViaMailto(true);
   };
 
@@ -155,7 +159,7 @@ export const ContactPage: React.FC = () => {
               <h2 className="text-xl font-bold text-slate-900 dark:text-white tracking-tight">Send an Inquiry</h2>
               <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
                 Fill out the form below. For transparent static hosting compatibility, clicking submit
-                launches your default mail client pre-addressed to the research coordinator.
+                opens a pre-filled Gmail draft addressed to the research coordinator. Review and click Send in Gmail.
               </p>
             </div>
 
@@ -163,10 +167,10 @@ export const ContactPage: React.FC = () => {
               <div className="p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-200 dark:border-emerald-800 text-xs text-emerald-900 dark:text-emerald-200 space-y-1">
                 <span className="font-bold flex items-center gap-1.5">
                   <Check className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
-                  Email client opened with message draft!
+                  Gmail draft opened — click Send in Gmail to deliver your message!
                 </span>
                 <p className="text-emerald-800 dark:text-emerald-300">
-                  If your mail application did not open automatically, please send your email
+                  If Gmail did not open, please open Gmail and send your message
                   directly to{' '}
                   <span className="font-mono font-semibold">{PROJECT_METADATA.officialEmail}</span>.
                 </p>
@@ -292,7 +296,7 @@ export const ContactPage: React.FC = () => {
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs sm:text-sm shadow-md transition-all focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-blue-600"
                 >
                   <Send className="w-4 h-4" />
-                  <span>Send Message via Email</span>
+                  <span>Continue to Gmail</span>
                 </button>
               </div>
             </form>

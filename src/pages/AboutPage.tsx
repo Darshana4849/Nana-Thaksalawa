@@ -160,7 +160,12 @@ export const AboutPage: React.FC<AboutPageProps> = () => {
               <div className="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
                 <div className="flex items-center gap-1.5 font-mono text-[11px]">
                   <Mail className="w-3.5 h-3.5 text-slate-400 dark:text-slate-500" />
-                  <span>{researcher.universityEmail}</span>
+                  <a
+                    href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(researcher.universityEmail)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-blue-600 dark:hover:text-blue-400 hover:underline break-all"
+                  >{researcher.universityEmail}</a>
                 </div>
                 <span className="text-[10px] text-slate-400 dark:text-slate-500 bg-slate-50 dark:bg-slate-800 px-2 py-0.5 rounded">
                   SLIIT Faculty of Computing
@@ -227,7 +232,12 @@ export const AboutPage: React.FC<AboutPageProps> = () => {
               <div className="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
                 <div className="flex items-center gap-1.5 font-mono text-[11px]">
                   <Mail className="w-3.5 h-3.5 text-slate-400 dark:text-slate-500" />
-                  <span>{sup.email}</span>
+                  <a
+                    href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(sup.email)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-blue-600 dark:hover:text-blue-400 hover:underline break-all"
+                  >{sup.email}</a>
                 </div>
                 <span className="text-[10px] text-slate-400 dark:text-slate-500 bg-slate-50 dark:bg-slate-800 px-2 py-0.5 rounded">
                   SLIIT Academic Staff
