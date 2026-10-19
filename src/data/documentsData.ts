@@ -1,6 +1,7 @@
 import { documents, DocumentRecord } from './oneDriveConfig';
 
 export type DocumentCategory =
+  | 'Checklist Document Submission'
   | 'Topic Assessment Form'
   | 'Project Proposal Documents'
   | 'Draft Thesis Documents'
@@ -31,6 +32,7 @@ export interface AcademicDocument {
 }
 
 export const DOCUMENT_CATEGORIES: string[] = [
+  'Checklist Document Submission',
   'Topic Assessment Form',
   'Project Proposal Documents',
   'Draft Thesis Documents',

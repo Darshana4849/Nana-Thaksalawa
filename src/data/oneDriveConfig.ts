@@ -55,6 +55,17 @@ export interface PresentationRecord {
  */
 export const documents: DocumentRecord[] = [
   {
+    id: 'checklist-document-submission',
+    title: 'Checklist Document Submission',
+    category: 'Checklist Document Submission',
+    fileType: 'PDF',
+    description: 'Submission checklist for verifying required research deliverables and accompanying academic documents.',
+    oneDriveUrl: '', // Add the official OneDrive sharing link when available.
+    status: 'pending',
+    date: 'To be updated',
+    deliverableCode: 'CHECKLIST',
+  },
+  {
     id: 'topic-assessment-form',
     title: 'Topic Assessment Form',
     category: 'Topic Assessment Form',

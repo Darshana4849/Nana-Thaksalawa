@@ -12,7 +12,6 @@ import {
   SINHALA_22_CLASSES,
 } from '../data/componentsData';
 import { RESEARCH_TEAM } from '../data/teamData';
-import { IMAGES_CONFIG } from '../data/imagesConfig';
 import { LightboxModal } from '../components/LightboxModal';
 import {
   Compass,
@@ -279,9 +278,75 @@ export const DomainPage: React.FC<DomainPageProps> = ({ initialComponentId }) =>
           </div>
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-100 dark:bg-slate-800/70 text-xs text-slate-500 dark:text-slate-400 flex items-center justify-between">
-          <span>*Detailed IEEE bibliographic entries will be populated upon thesis submission.</span>
-          <span className="font-medium text-slate-700 dark:text-slate-300">[SLIIT Faculty of Computing Format]</span>
+        {/* IEEE-style references corresponding to the Literature Survey citations [1]–[16]. */}
+        <div className="border-t border-slate-200 dark:border-slate-700 pt-6 space-y-4">
+          <h3 className="text-base font-bold text-slate-900 dark:text-white">Literature Survey References</h3>
+          <ol className="space-y-3 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+            <li className="flex items-start gap-3">
+              <span className="font-mono font-semibold shrink-0 text-blue-600 dark:text-blue-400">[1]</span>
+              <a href="https://doi.org/10.1109/34.824821" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 hover:underline">R. Plamondon and S. N. Srihari, “On-line and off-line handwriting recognition: A comprehensive survey,” IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 22, no. 1, pp. 63–84, 2000.</a>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="font-mono font-semibold shrink-0 text-blue-600 dark:text-blue-400">[2]</span>
+              <a href="https://doi.org/10.1109/I2CT54291.2022.9824233" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 hover:underline">“Improved Handwritten Character Recognition for Sinhala Language based on Convolutional Neural Networks,” in 2022 IEEE 7th International Conference for Convergence in Technology (I2CT), 2022.</a>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="font-mono font-semibold shrink-0 text-blue-600 dark:text-blue-400">[3]</span>
+              <a href="https://doi.org/10.1109/5.726791" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 hover:underline">Y. LeCun, L. Bottou, Y. Bengio, and P. Haffner, “Gradient-Based Learning Applied to Document Recognition,” Proceedings of the IEEE, vol. 86, no. 11, pp. 2278–2324, 1998.</a>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="font-mono font-semibold shrink-0 text-blue-600 dark:text-blue-400">[4]</span>
+              <a href="https://doi.org/10.1109/CVPR.2016.90" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 hover:underline">K. He, X. Zhang, S. Ren, and J. Sun, “Deep Residual Learning for Image Recognition,” in Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, 2016.</a>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="font-mono font-semibold shrink-0 text-blue-600 dark:text-blue-400">[5]</span>
+              <a href="https://doi.org/10.1016/j.compedu.2020.103831" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 hover:underline">N. Bonneton-Botté et al., “Can tablet apps support the learning of handwriting? An investigation of learning outcomes in kindergarten classroom,” Computers &amp; Education, vol. 151, 103831, 2020.</a>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="font-mono font-semibold shrink-0 text-blue-600 dark:text-blue-400">[6]</span>
+              <a href="https://doi.org/10.3102/003465430298487" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 hover:underline">J. Hattie and H. Timperley, “The Power of Feedback,” Review of Educational Research, vol. 77, no. 1, pp. 81–112, 2007.</a>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="font-mono font-semibold shrink-0 text-blue-600 dark:text-blue-400">[7]</span>
+              <a href="https://doi.org/10.1016/j.compedu.2020.103831" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 hover:underline">N. Bonneton-Botté et al., “Can tablet apps support the learning of handwriting? An investigation of learning outcomes in kindergarten classroom,” Computers &amp; Education, vol. 151, 103831, 2020 (digital handwriting intervention).</a>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="font-mono font-semibold shrink-0 text-blue-600 dark:text-blue-400">[8]</span>
+              <a href="https://scholar.google.com/scholar?q=Graham+Santangelo+Does+handwriting+instruction+have+an+effect+on+writing+quality+2014" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 hover:underline">S. Graham and T. Santangelo, “Does handwriting instruction have an effect on writing quality? A meta-analysis,” Educational Psychology Review, 2014.</a>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="font-mono font-semibold shrink-0 text-blue-600 dark:text-blue-400">[9]</span>
+              <a href="https://www.hup.harvard.edu/books/9780674576292" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 hover:underline">L. S. Vygotsky, Mind in Society: The Development of Higher Psychological Processes, Harvard University Press, 1978.</a>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="font-mono font-semibold shrink-0 text-blue-600 dark:text-blue-400">[10]</span>
+              <a href="https://doi.org/10.1111/j.1469-7610.1976.tb00381.x" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 hover:underline">D. Wood, J. S. Bruner, and G. Ross, “The Role of Tutoring in Problem Solving,” Journal of Child Psychology and Psychiatry, vol. 17, no. 2, pp. 89–100, 1976.</a>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="font-mono font-semibold shrink-0 text-blue-600 dark:text-blue-400">[11]</span>
+              <a href="https://doi.org/10.1007/s10648-019-09498-w" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 hover:underline">M. Sailer and L. Homner, “The Gamification of Learning: A Meta-analysis,” Educational Psychology Review, vol. 32, pp. 77–112, 2020.</a>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="font-mono font-semibold shrink-0 text-blue-600 dark:text-blue-400">[12]</span>
+              <a href="https://doi.org/10.1145/2181037.2181040" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 hover:underline">S. Deterding, D. Dixon, R. Khaled, and L. E. Nacke, “From Game Design Elements to Gamefulness: Defining Gamification,” in Proceedings of the 15th International Academic MindTrek Conference, 2011.</a>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="font-mono font-semibold shrink-0 text-blue-600 dark:text-blue-400">[13]</span>
+              <a href="https://www.carnegie.org/publications/writing-next-effective-strategies-to-improve-writing-of-adolescents-in-middle-and-high-schools/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 hover:underline">S. Graham and D. Perin, Writing Next: Effective Strategies to Improve Writing of Adolescents in Middle and High Schools, Alliance for Excellent Education, 2007.</a>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="font-mono font-semibold shrink-0 text-blue-600 dark:text-blue-400">[14]</span>
+              <a href="https://ies.ed.gov/ncee/wwc/PracticeGuide/17" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 hover:underline">S. Graham et al., Teaching Elementary School Students to Be Effective Writers: A Practice Guide, Institute of Education Sciences, 2012.</a>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="font-mono font-semibold shrink-0 text-blue-600 dark:text-blue-400">[15]</span>
+              <a href="https://doi.org/10.1177/0002764213498851" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 hover:underline">G. Siemens, “Learning Analytics: The Emergence of a Discipline,” American Behavioral Scientist, vol. 57, no. 10, pp. 1380–1400, 2013.</a>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="font-mono font-semibold shrink-0 text-blue-600 dark:text-blue-400">[16]</span>
+              <a href="https://doi.org/10.1504/IJTEL.2012.051816" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 hover:underline">R. Ferguson, “Learning Analytics: Drivers, Developments and Challenges,” International Journal of Technology Enhanced Learning, vol. 4, no. 5/6, pp. 304–317, 2012.</a>
+            </li>
+          </ol>
         </div>
       </section>
 
@@ -926,132 +991,6 @@ export const DomainPage: React.FC<DomainPageProps> = ({ initialComponentId }) =>
           <div className="p-3 rounded-lg bg-slate-800/60 border border-slate-700 text-slate-400 text-xs flex items-center justify-between">
             <span>Communication Protocol: Secure REST API over JSON / HTTPS</span>
             <span>Microservice Payload: 80×80 Grayscale Base64 / Blob</span>
-          </div>
-        </div>
-      </section>
-
-      {/* 8.10 RESEARCH EVALUATION & GALLERY */}
-      <section className="p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-2xs space-y-6">
-        <div className="border-b border-slate-100 dark:border-slate-800 pb-4">
-          <span className="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider">
-            Section 8.10
-          </span>
-          <h2 className="text-2xl font-bold text-slate-900 dark:text-white tracking-tight mt-1">
-            Research Evaluation & Interface Gallery
-          </h2>
-          <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
-            Structured placeholders reserved for genuine system screenshots and evaluation graphs
-            derived from the final thesis submission.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* Card 1: Component 1 Evaluation Plot */}
-          <div className="rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden bg-slate-50 dark:bg-slate-800/60 flex flex-col group hover:shadow-md transition-all">
-            <div
-              className="h-44 bg-slate-900 flex items-center justify-center overflow-hidden relative cursor-pointer"
-              onClick={() =>
-                openLightbox(
-                  IMAGES_CONFIG.gallery.c1Evaluation.title,
-                  IMAGES_CONFIG.gallery.c1Evaluation.caption,
-                  'cnn'
-                )
-              }
-            >
-              <img
-                src={IMAGES_CONFIG.gallery.c1Evaluation.src}
-                alt={IMAGES_CONFIG.gallery.c1Evaluation.title}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform"
-              />
-              <div className="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-semibold gap-1.5">
-                <Maximize2 className="w-4 h-4" />
-                <span>Click to enlarge</span>
-              </div>
-            </div>
-            <div className="p-4 bg-white dark:bg-slate-900 flex-1 flex flex-col justify-between">
-              <div>
-                <h4 className="text-xs font-bold text-slate-900 dark:text-white">{IMAGES_CONFIG.gallery.c1Evaluation.title}</h4>
-                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
-                  {IMAGES_CONFIG.gallery.c1Evaluation.caption}
-                </p>
-              </div>
-              <div className="mt-3 pt-2 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-[10px] text-slate-400 font-mono">
-                <span className="text-blue-600 dark:text-blue-400 font-semibold">Test Acc: 96.75%</span>
-                <span>/public/images/gallery/c1-evaluation.svg</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 2: Component 2 Writing Canvas */}
-          <div className="rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden bg-slate-50 dark:bg-slate-800/60 flex flex-col group hover:shadow-md transition-all">
-            <div
-              className="h-44 bg-slate-100 dark:bg-slate-800 flex items-center justify-center overflow-hidden relative cursor-pointer border-b border-slate-200 dark:border-slate-700"
-              onClick={() =>
-                openLightbox(
-                  IMAGES_CONFIG.gallery.c2Canvas.title,
-                  IMAGES_CONFIG.gallery.c2Canvas.caption,
-                  'tracing'
-                )
-              }
-            >
-              <img
-                src={IMAGES_CONFIG.gallery.c2Canvas.src}
-                alt={IMAGES_CONFIG.gallery.c2Canvas.title}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform"
-              />
-              <div className="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-semibold gap-1.5">
-                <Maximize2 className="w-4 h-4" />
-                <span>Click to enlarge</span>
-              </div>
-            </div>
-            <div className="p-4 bg-white dark:bg-slate-900 flex-1 flex flex-col justify-between">
-              <div>
-                <h4 className="text-xs font-bold text-slate-900 dark:text-white">{IMAGES_CONFIG.gallery.c2Canvas.title}</h4>
-                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
-                  {IMAGES_CONFIG.gallery.c2Canvas.caption}
-                </p>
-              </div>
-              <div className="mt-3 pt-2 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-[10px] text-slate-400 font-mono">
-                <span className="text-teal-600 dark:text-teal-400 font-semibold">Adaptive Scaffolding</span>
-                <span>/public/images/gallery/c2-canvas.svg</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 3: Component 4 Progress View */}
-          <div className="rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden bg-slate-50 dark:bg-slate-800/60 flex flex-col group hover:shadow-md transition-all">
-            <div
-              className="h-44 bg-slate-900 flex items-center justify-center overflow-hidden relative cursor-pointer"
-              onClick={() =>
-                openLightbox(
-                  IMAGES_CONFIG.gallery.c4Dashboard.title,
-                  IMAGES_CONFIG.gallery.c4Dashboard.caption,
-                  'sentence'
-                )
-              }
-            >
-              <img
-                src={IMAGES_CONFIG.gallery.c4Dashboard.src}
-                alt={IMAGES_CONFIG.gallery.c4Dashboard.title}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform"
-              />
-              <div className="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-semibold gap-1.5">
-                <Maximize2 className="w-4 h-4" />
-                <span>Click to enlarge</span>
-              </div>
-            </div>
-            <div className="p-4 bg-white dark:bg-slate-900 flex-1 flex flex-col justify-between">
-              <div>
-                <h4 className="text-xs font-bold text-slate-900 dark:text-white">{IMAGES_CONFIG.gallery.c4Dashboard.title}</h4>
-                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
-                  {IMAGES_CONFIG.gallery.c4Dashboard.caption}
-                </p>
-              </div>
-              <div className="mt-3 pt-2 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-[10px] text-slate-400 font-mono">
-                <span className="text-purple-600 dark:text-purple-400 font-semibold">Spring Boot REST</span>
-                <span>/public/images/gallery/c4-dashboard.svg</span>
-              </div>
-            </div>
           </div>
         </div>
       </section>
